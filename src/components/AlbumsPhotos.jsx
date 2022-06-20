@@ -68,11 +68,3 @@ const AlbumPhotosListing = ({match}) => {
 };
 
 export default AlbumPhotosListing;
-
-/*
-			{albumsPhotos && albumsPhotos.filter(photo => photo.albumId == match.params.albumId).map((photo) => 
-			<div key={photo.id}>
-			<img src={photo.url} alt={photo.title} width="100" height="100" />
-			</div>
-			)}
-*/

@@ -8,19 +8,16 @@ import {
 } from "react-router-dom";
 import Albums from './components/Albums';
 import Users from './components/Users';
-import AlbumsPhotos from './components/AlbumsPhotos'
+import AlbumsPhotos from './components/AlbumsPhotos';
+import Navbar from './components/Navbar';
 
 export default function App() {
 
   return (
+  
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/user">Users</Link>
-          </li>
-        </ul>
-        <hr />
+        <Navbar />
         <Switch>
           <Route path="/user" exact component={Users} />
           <Route path={"/user/:userId"} excat component={Albums} />
